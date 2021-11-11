@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "providers",
+  "info": {
+    "name": "provider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reference": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "providerUUID": {
+      "type": "string",
+      "unique": true
+    },
+    "calendars": {
+      "via": "provider",
+      "collection": "calendar"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calendars",
+  "info": {
+    "name": "calendar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "open": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "provider": {
+      "via": "calendars",
+      "model": "provider"
+    },
+    "calendarUUID": {
+      "type": "string",
+      "unique": true
+    },
+    "timeslots": {
+      "via": "calendar",
+      "collection": "timeslot"
+    }
+  }
+}

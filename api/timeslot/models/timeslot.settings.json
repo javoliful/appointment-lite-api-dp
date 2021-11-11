@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timeslots",
+  "info": {
+    "name": "timeslot",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "confirmed",
+        "canceled"
+      ],
+      "default": "pending",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "onsite",
+        "virtual",
+        "other"
+      ]
+    },
+    "minBookings": {
+      "type": "integer"
+    },
+    "maxBookings": {
+      "type": "integer"
+    },
+    "cancelReason": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "timeslotUUID": {
+      "type": "string"
+    },
+    "calendar": {
+      "model": "calendar",
+      "via": "timeslots"
+    },
+    "bookings": {
+      "via": "timeslot",
+      "collection": "booking"
+    }
+  }
+}

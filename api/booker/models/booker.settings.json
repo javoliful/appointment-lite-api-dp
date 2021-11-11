@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookers",
+  "info": {
+    "name": "booker",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bookerUUID": {
+      "type": "string",
+      "unique": true
+    },
+    "reference": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

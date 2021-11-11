@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "name": "booking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "unconfirmed",
+        "confirmed",
+        "booker_canceled",
+        "provider_canceled"
+      ]
+    },
+    "cancelReason": {
+      "type": "text"
+    },
+    "booker": {
+      "model": "booker"
+    },
+    "timeslot": {
+      "via": "bookings",
+      "model": "timeslot"
+    },
+    "bookingUUID": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
