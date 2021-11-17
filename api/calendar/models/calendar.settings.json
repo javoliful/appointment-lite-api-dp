@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "calendars",
   "info": {
-    "name": "calendar"
+    "name": "calendar",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,7 +21,7 @@
       "via": "calendars",
       "model": "provider"
     },
-    "calendarUUID": {
+    "uuid": {
       "type": "string",
       "unique": true
     },

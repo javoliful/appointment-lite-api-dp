@@ -48,12 +48,12 @@
     "endDate": {
       "type": "datetime"
     },
-    "timeslotUUID": {
+    "uuid": {
       "type": "string"
     },
     "calendar": {
-      "model": "calendar",
-      "via": "timeslots"
+      "via": "timeslots",
+      "model": "calendar"
     },
     "bookings": {
       "via": "timeslot",

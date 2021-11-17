@@ -541,7 +541,7 @@
               "name": {
                 "type": "string"
               },
-              "providerUUID": {
+              "uuid": {
                 "type": "string"
               },
               "calendars": {
@@ -558,7 +558,7 @@
               }
             }
           },
-          "calendarUUID": {
+          "uuid": {
             "type": "string"
           },
           "timeslots": {
@@ -606,7 +606,7 @@
                 "endDate": {
                   "type": "string"
                 },
-                "timeslotUUID": {
+                "uuid": {
                   "type": "string"
                 },
                 "calendar": {
@@ -641,7 +641,7 @@
           "provider": {
             "type": "string"
           },
-          "calendarUUID": {
+          "uuid": {
             "type": "string"
           },
           "timeslots": {

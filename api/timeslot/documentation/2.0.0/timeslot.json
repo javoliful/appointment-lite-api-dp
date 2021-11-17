@@ -560,7 +560,7 @@
             "type": "string",
             "format": "date-time"
           },
-          "timeslotUUID": {
+          "uuid": {
             "type": "string"
           },
           "calendar": {
@@ -578,7 +578,7 @@
               "provider": {
                 "type": "string"
               },
-              "calendarUUID": {
+              "uuid": {
                 "type": "string"
               },
               "timeslots": {
@@ -623,7 +623,7 @@
                 "timeslot": {
                   "type": "string"
                 },
-                "bookingUUID": {
+                "uuid": {
                   "type": "string"
                 },
                 "created_by": {
@@ -679,7 +679,7 @@
             "type": "string",
             "format": "date-time"
           },
-          "timeslotUUID": {
+          "uuid": {
             "type": "string"
           },
           "calendar": {

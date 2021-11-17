@@ -522,8 +522,9 @@
           "id": {
             "type": "string"
           },
-          "bookerUUID": {
-            "type": "string"
+          "uuid": {
+            "type": "string",
+            "maxLength": 36
           },
           "reference": {
             "type": "string"
@@ -538,8 +539,9 @@
       },
       "NewBooker": {
         "properties": {
-          "bookerUUID": {
-            "type": "string"
+          "uuid": {
+            "type": "string",
+            "maxLength": 36
           },
           "reference": {
             "type": "string"

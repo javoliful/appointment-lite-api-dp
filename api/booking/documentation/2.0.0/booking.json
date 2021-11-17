@@ -542,7 +542,7 @@
               "id": {
                 "type": "string"
               },
-              "bookerUUID": {
+              "uuid": {
                 "type": "string"
               },
               "reference": {
@@ -605,7 +605,7 @@
               "endDate": {
                 "type": "string"
               },
-              "timeslotUUID": {
+              "uuid": {
                 "type": "string"
               },
               "calendar": {
@@ -625,7 +625,7 @@
               }
             }
           },
-          "bookingUUID": {
+          "uuid": {
             "type": "string"
           }
         }
@@ -650,7 +650,7 @@
           "timeslot": {
             "type": "string"
           },
-          "bookingUUID": {
+          "uuid": {
             "type": "string"
           },
           "created_by": {

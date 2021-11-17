@@ -12,9 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "bookerUUID": {
+    "uuid": {
       "type": "string",
-      "unique": true
+      "unique": true,
+      "required": false,
+      "maxLength": 36
     },
     "reference": {
       "type": "string"

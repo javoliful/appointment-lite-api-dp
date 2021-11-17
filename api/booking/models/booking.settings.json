@@ -31,7 +31,7 @@
       "via": "bookings",
       "model": "timeslot"
     },
-    "bookingUUID": {
+    "uuid": {
       "type": "string",
       "unique": true
     }
